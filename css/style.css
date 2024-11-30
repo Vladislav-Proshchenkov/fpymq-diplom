@@ -115,7 +115,144 @@ body {
   display: flex;
 }
 
-.trend-card {
-  max-width: 414px;
+.trend-card-first {
+  width: 414px;
   height: 319px;
+  margin-left: -4px;
+  margin-right: 4px;
+  background-image: url("../images/trend1.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  z-index: 1;
+}
+
+.trend-card-first:after {
+  content: "";
+  height: 319px;
+  width: 414px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.trend-card-second {
+  width: 414px;
+  height: 319px;
+  margin-right: 4px;
+  background-image: url("../images/trend2.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  z-index: 1;
+}
+
+.trend-card-second:after {
+  content: "";
+  height: 319px;
+  width: 414px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.trend-card-third {
+  width: 414px;
+  height: 319px;
+  background-image: url("../images/trend3.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.trend-card-third:after {
+  content: "";
+  height: 319px;
+  width: 414px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.trend-card-fourth {
+  width: 414px;
+  height: 319px;
+  margin-right: -4px;
+  margin-left: 4px;
+  background-image: url("../images/trend4.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.trend-card-fourth:after {
+  content: "";
+  height: 319px;
+  width: 414px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.trand-box {
+  position: absolute;
+  justify-content: space-between;
+  max-width: 302px;
+  border: 3px solid rgba(225, 217, 189, 0.6);
+  bottom: 0;
+  margin-left: 18px;
+  margin-right: 22px;
+  margin-bottom: 16px;
+  padding-top: 34px;
+  padding-bottom: 37px;
+  padding-left: 33px;
+  padding-right: 33px;
+}
+
+.trand-tag-block{
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.trend-tag {
+  font-family: "open-sans-bold", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #b59f5b;
+  margin-right: 20px;
+}
+
+.trend-text {
+  font-family: "open-sans-bold", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
 }
