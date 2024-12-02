@@ -132,7 +132,7 @@ body {
 .trend-card-first:after {
   content: "";
   height: 319px;
-  width: 414px;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -159,7 +159,7 @@ body {
 .trend-card-second:after {
   content: "";
   height: 319px;
-  width: 414px;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -184,7 +184,7 @@ body {
 .trend-card-third:after {
   content: "";
   height: 319px;
-  width: 414px;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -211,7 +211,7 @@ body {
 .trend-card-fourth:after {
   content: "";
   height: 319px;
-  width: 414px;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -237,12 +237,11 @@ body {
   padding-right: 33px;
 }
 
-.trand-tag-block{
+.tag-block{
   display: flex;
-  margin-bottom: 16px;
 }
 
-.trend-tag {
+.tag {
   font-family: "open-sans-bold", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
@@ -253,6 +252,206 @@ body {
 .trend-text {
   font-family: "open-sans-bold", sans-serif;
   font-size: 20px;
+  margin-top: 16px;
   text-transform: uppercase;
   color: white;
+}
+
+.news-block {
+  width: 1170px;
+  margin: auto;
+  margin-top: 2px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-cards {
+  width: 760px;
+}
+
+.news-card {
+  display: flex;
+  margin-top: 59px;
+}
+
+.news-photo {
+  width: 381px;
+  height: 294px;
+}
+
+.news-description {
+  width: 378px;
+  margin-left: 31px;
+  padding-top: 2px;
+}
+
+.title-block {
+  margin-top: 6px;
+  font-family: "open-sans-bold", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 24px;
+  color: #0f0d0e;
+}
+
+.data-author-block {
+  margin-top: 24px;
+  font-size: 12px;
+  display:flex;
+}
+
+.data {
+  font-family: "open-sans-regular", sans-serif;
+  color: #888888;
+}
+
+.author {
+  font-family: "open-sans-bold", sans-serif;
+  color: black;
+  margin-left: 15px;
+}
+
+.description-block {
+  margin-top: 45px;
+  font-family: "open-sans-regular", sans-serif;
+  color: #0f0d0e;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.description-block-second {
+  margin-top: 18px;
+  font-family: "open-sans-regular", sans-serif;
+  color: #0f0d0e;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+aside {
+  width: 271px;
+}
+
+.posts {
+  margin-top: 62px;
+  text-align: center;
+  font-family: "open-sans-bold", sans-serif;
+  color: #0f0d0e;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.link-card {
+  display: flex;
+  margin-top: 22px;
+}
+
+.link-image {
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+}
+
+.link-title {
+  font-family: "open-sans-bold", sans-serif;
+  color: black;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  line-height: 18px;
+  margin-top: 5px;
+}
+
+.search {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between
+}
+
+.field {
+  width: 100%;
+  height: 48px;
+  border: none;
+  padding: 0;
+  background-color: #f4f7f6;
+  font-family: "open-sans-regular", sans-serif;
+  color: rgba(0, 0, 0, 0.54);
+  padding-left: 19px;
+}
+
+.button {
+  width: 48;
+  height: 48;
+  border: none;
+  padding: 0;
+  background-color: #b59f5b;
+  border-radius: 0;
+}
+
+.search_button {
+  width: 18px;
+  height: 18px;
+  margin-top: 14px;
+  margin-bottom: 13px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.email {
+  display: flex;
+  justify-content: space-between
+}
+
+.email_button {
+  width: 100%;
+  height: 48px;
+  font-family: "open-sans-bold", sans-serif;
+  color: white;
+  size: 14px;
+  text-transform: uppercase;
+  margin-top: 18px;
+  border: none;
+  padding: 0;
+  background-color: #b59f5b;
+  border-radius: 0;
+}
+
+.list-tags {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.tag-in-list {
+  border: 3px solid #eeeeee;
+  font-family: "open-sans-bold", sans-serif;
+  size: 12px;
+  color: #0f0d0e;
+  text-transform: uppercase;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-right: 5px;
+}
+
+.themes-item {
+  font-family: "open-sans-bold", sans-serif;
+  size: 14px;
+  color: black;
+}
+
+.themes-quantity {
+  font-family: "open-sans-bold", sans-serif;
+  size: 12px;
+  color: #b59f5b;
+  vertical-align: super;
+  margin-left: 2px;
+}
+
+.line-themes {
+  width: 100%;
+  border-top: 1px solid #eeeeee;
+  margin-top: 13px;
+  margin-bottom: 13px;
 }
