@@ -38,14 +38,14 @@
   </div>
   </header>
   <main>
-    <div class="is-trending-now">Сейчас в тренде</div>
+    <div class="block-header">Сейчас в тренде</div>
     <div class="line"></div>
     <section class="trend-news">
       <div class="trend-card-first">
         <div class="trand-box">
           <div class="tag-block">
-            <div class="tag">Lifestyle</div>
-            <div class="tag">Interior</div>
+            <div><a class="tag" href="#">Lifestyle</a></div>
+            <div><a class="tag" href="#">Interior</a></div>
           </div>
           <div class="trend-text">Сейчас в тренде: сад на подоконнике</div>
         </div>
@@ -53,7 +53,7 @@
       <div class="trend-card-second">
          <div class="trand-box">
           <div class="tag-block">
-            <div class="tag">Food</div>
+            <div><a class="tag" href="#">Food</a></div>
           </div>
           <div class="trend-text">Cыры на красивых картинках из интернета: какие они на вкус?</div>
         </div>
@@ -61,8 +61,8 @@
       <div class="trend-card-third">
          <div class="trand-box">
           <div class="tag-block">
-            <div class="tag">Lifestyle</div>
-            <div class="tag">Travel</div>
+            <div><a class="tag" href="#">Lifestyle</a></div>
+            <div><a class="tag" href="#">Travel</a></div>
           </div>
           <div class="trend-text">Собираемся в первый поход в горы</div>
         </div>
@@ -70,8 +70,8 @@
       <div class="trend-card-fourth">
          <div class="trand-box">
           <div class="tag-block">
-            <div class="tag">Food</div>
-            <div class="tag">Health</div>
+            <div><a class="tag" href="#">Food</a></div>
+            <div><a class="tag" href="#">Health</a></div>
           </div>
           <div class="trend-text">Сейчас в тренде: сколько витамина в лимонах?</div>
         </div>
@@ -83,8 +83,8 @@
           <img class="news-photo" src="images/last-post1.jpg" alt="Пляж">
           <div class="news-description">
             <div class="tag-block">
-              <div class="tag">Travel</div>
-              <div class="tag">Health</div>
+              <div><a class="tag" href="#">Travel</a></div>
+              <div><a class="tag" href="#">Health</a></div>
             </div>
             <div class="title-block">10 мест, ради которых стоит проснуться на рассвете</div>
             <div class="data-author-block">
@@ -98,8 +98,8 @@
           <img class="news-photo" src="images/last-post2.jpg" alt="Йога">
           <div class="news-description">
             <div class="tag-block">
-              <div class="tag">Health</div>
-              <div class="tag">Lifestyle</div>
+              <div><a class="tag" href="#">Health</a></div>
+              <div><a class="tag" href="#">Lifestyle</a></div>
             </div>
             <div class="title-block">Йога для начинающих в домашних условиях</div>
             <div class="data-author-block">
@@ -113,7 +113,7 @@
           <img class="news-photo" src="images/last-post3.jpg" alt="Фестиваль">
           <div class="news-description">
             <div class="tag-block">
-              <div class="tag">Music</div>
+              <div><a class="tag" href="#">Music</a></div>
             </div>
             <div class="title-block">Лучшие музыкальные фестивали этого лета</div>
             <div class="data-author-block">
@@ -128,8 +128,8 @@
           <img class="news-photo" src="images/last-post4.jpg" alt="Кулинария">
           <div class="news-description">
             <div class="tag-block">
-              <div class="tag">Lifestyle</div>
-              <div class="tag">Food</div>
+              <div><a class="tag" href="#">Lifestyle</a></div>
+              <div><a class="tag" href="#">Food</a></div>
             </div>
             <div class="title-block">Наукоёмкий подход к кулинарии</div>
             <div class="data-author-block">
@@ -143,9 +143,9 @@
           <img class="news-photo" src="images/last-post5.jpg" alt="Подушка">
           <div class="news-description">
             <div class="tag-block">
-              <div class="tag">Lifestyle</div>
-              <div class="tag">Interior</div>
-              <div class="tag">Art</div>
+              <div><a class="tag" href="#">Lifestyle</a></div>
+              <div><a class="tag" href="#">Interior</a></div>
+              <div><a class="tag" href="#">Art</a></div>
             </div>
             <div class="title-block">делаем модные принты на подушках для интерьера </div>
             <div class="data-author-block">
@@ -209,36 +209,94 @@
         <div class="posts">Теги</div>   
         <div class="line"></div>
         <div class="list-tags">
-          <div class="tag-in-list">Fashion</div>
-          <div class="tag-in-list">Music</div>
-          <div class="tag-in-list">Lifestyle</div>
-          <div class="tag-in-list">Art</div>
-          <div class="tag-in-list">Interior</div>
-          <div class="tag-in-list">Travel</div>
-          <div class="tag-in-list">Food</div>
-          <div class="tag-in-list">Health</div>
+          <button class="tag-in-list">Fashion</button>
+          <button class="tag-in-list">Music</button>
+          <button class="tag-in-list">Lifestyle</button>
+          <button class="tag-in-list">Art</button>
+          <button class="tag-in-list">Interior</button>
+          <button class="tag-in-list">Travel</button>
+          <button class="tag-in-list">Food</button>
+          <button class="tag-in-list">Health</button>
         </div>
-        <div class="posts">Теги</div>   
+        <div class="posts">Темы</div>   
         <div class="line"></div>
         <div class="themes">
-          <span class="themes-item">Красота</span><span class="themes-quantity">12</span>
+          <a class="themes-item" href="#">Красота</a><span class="themes-quantity">12</span>
           <div class="line-themes"></div>
-          <span class="themes-item">Здоровье</span><span class="themes-quantity">4</span>
+          <a class="themes-item" href="#">Здоровье</a><span class="themes-quantity">4</span>
           <div class="line-themes"></div>
-          <span class="themes-item">Образ жизни</span><span class="themes-quantity">145</span>
+          <a class="themes-item" href="#">Образ жизни</a><span class="themes-quantity">145</span>
           <div class="line-themes"></div>
-          <span class="themes-item">Музыка</span><span class="themes-quantity">28</span>
+          <a class="themes-item" href="#">Музыка</a><span class="themes-quantity">28</span>
           <div class="line-themes"></div>
-          <span class="themes-item">Спорт</span><span class="themes-quantity">62</span>
+          <a class="themes-item" href="#">Спорт</a><span class="themes-quantity">62</span>
           <div class="line-themes"></div>
-          <span class="themes-item">Йога</span><span class="themes-quantity">8</span>
+          <a class="themes-item" href="#">Йога</a><span class="themes-quantity">8</span>
           <div class="line-themes"></div>
         </div>
       </aside>
     </section>
+    <div class="block-header">Наши изделия</div>
+    <div class="line"></div>
+    <section class="news-block">
+      <div class="shop-card">
+        <img class="shop-card-image" src="images/shop-item-desk1.jpg" alt="Подушка">
+        <div class="shop-card-description">
+          <div class="title-block">Подушки на диван</div>
+          <div class="shop-description-block">Набор из двух подушек с модными принтами. Видео о создании <a class="shop-link" href=#>здесь</a>.</div>
+          <div class="buy-block">
+            <div class="price-block">
+              <div class="old-price">1000 ₽</div>
+              <div class="new-price">800 ₽</div>
+            </div>
+            <div>
+              <button class="buy-button"><a class="link-buy-button" href="#">В магазин</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shop-card">
+        <img class="shop-card-image" src="images/shop-item-desk2.jpg" alt="Подушка">
+        <div class="shop-card-description">
+          <div class="title-block">Кукла «Зайчик»</div>
+          <div class="shop-description-block">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a class="shop-link" href=#>весенняя серия постов</a> в блоге и несколько подкастов.</div>
+          <div class="buy-block">
+            <div class="price-block">
+              <div class="old-price"></div>
+              <div class="new-price">3500 ₽</div>
+            </div>
+            <div>
+              <button class="buy-button"><a class="link-buy-button" href="#">В магазин</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shop-card">
+        <img class="shop-card-image" src="images/shop-item-desk3.jpg" alt="Подушка">
+        <div class="shop-card-description">
+          <div class="title-block">Шестиугольная рамка</div>
+          <div class="shop-description-block">Необычная рамка для украшения дома из видео <a class="shop-link" href=#>«Как сделать рамку из подручных средств за 30 минут» </a></div>
+          <div class="buy-block">
+            <div class="price-block">
+              <div class="old-price">500 ₽</div>
+              <div class="new-price">400 ₽</div>
+            </div>
+            <div>
+              <button class="buy-button"><a class="link-buy-button" href="#">В магазин</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-
-
+    </section>
   </main>
+  <footer>
+    <div class="social-networks">
+      <a class="link-social-networks" href="#"><img class="social-networks-icon" src="svg/001-dribbble.svg" alt="dribbble"></a>
+      <a class="link-social-networks" href="#"><img class="social-networks-icon" src="svg/002-pinterest.svg" alt="pinterest"></a>
+      <a class="link-social-networks" href="#"><img class="social-networks-icon" src="svg/003-tumblr.svg" alt="tumblr"></a>
+    </div>
+    <div class="license">Copyright © 2009–2019 City Blog LLC.</div>
+  </footer>
 </body>
 </html>
