@@ -7,6 +7,37 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+
+
+    <div class="popup-overlay">
+      <div class="popup">
+        <div class="exit">
+          <a href="#"><img class="exit_popup" src="svg/form-x.svg" alt="Закрыть"></a>
+        </div>
+        <div class="popup-window">
+          <div class="popup-header">Ваш фидбек</div>
+          <div class="line"></div>
+          <div class="question">Как часто вы заходите на сайт?</div>
+          <input class="first-input" type="text" list="list" placeholder="Почти каждый день"/>
+            <datalist id="list">
+              <option value="Почти каждый день"/>
+              <option value="Раз в несколько дней"/>
+              <option value="Раз в несколько недель"/>
+              <option value="Несколько раз в год"/>
+            </datalist>
+          <div class="question">Вы подписаны на e-mail рассылку?</div>
+          <input class="radio" id="radioExample" type="radio" name="e-mail" checked>
+            <label for="radioExample" class="radio-button">Да</label>
+          <input class="radio" id="radioExample" type="radio" name="e-mail">
+            <label for="radioExample" class="radio-button">Нет</label>
+          <div class="question">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</div>
+          <textarea class="second-input" name="comment" placeholder="Может, больше рецептов?"></textarea>
+          <button class="send-button">Отправить</button>
+        </div>
+    </div>
+  </div>
+
+
   <header class="header">
   <div class="container">
   	<div class="panel">
@@ -300,3 +331,16 @@
   </footer>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
