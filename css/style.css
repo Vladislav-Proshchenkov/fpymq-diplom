@@ -514,6 +514,13 @@ aside {
   margin-bottom: 13px;
 }
 
+.shop-block {
+  max-width: 1170px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
 .shop-card {
   width: 347px;
   display: flex;
@@ -910,13 +917,27 @@ aside {
     min-width: 271px;
   }
 
+  .shop-block {
+    width: 90.89vw;
+    margin-left: 35px;
+    margin-right: 35px;
+    flex-wrap: wrap;
 
+  }
 
+  .shop-card {
+    width: 48.7%;
+    margin-bottom: 28px;
+  }
 
+  .shop-card-image {
+    width: 37.89vw;
+    height: 29.43vw;
+  }
 
-
-
-
-
-
+  .social-networks {
+    margin-top: 36px;
+    width: 90.89vw;
+  }
+  
 }

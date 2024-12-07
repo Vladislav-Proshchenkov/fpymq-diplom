@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<!--   <div class="popup-overlay">
+  <!-- <div class="popup-overlay">
     <div class="popup">
       <div class="exit">
         <a href="#"><img class="exit_popup" src="svg/form-x.svg" alt="Закрыть"></a>
@@ -16,13 +16,14 @@
         <div class="popup-header">Ваш фидбек</div>
         <div class="line"></div>
         <div class="question">Как часто вы заходите на сайт?</div>
-        <input class="first-input" type="text" list="list" placeholder="Почти каждый день"/>
+        <select class="first-input" type="text" list="list" placeholder="Почти каждый день"/>
           <datalist id="list">
-            <option value="Почти каждый день"/option>
-            <option value="Раз в несколько дней"/option>
-            <option value="Раз в несколько недель"/option>
-            <option value="Несколько раз в год"/option>
+            <option value="everyday">Почти каждый день</option>
+            <option value="often">Раз в несколько дней</option>
+            <option value="sometimes">Раз в несколько недель</option>
+            <option value="rarely">Несколько раз в год</option>
           </datalist>
+        </select>
           <div class="question">Вы подписаны на e-mail рассылку?</div>
           <div class="radio-button-block">
             <input class="radio" id="radioExample" type="radio" name="e-mail" checked>
@@ -272,7 +273,7 @@
     </section>
     <div class="block-header">Наши изделия</div>
     <div class="line"></div>
-    <section class="news-block">
+    <section class="shop-block">
       <div class="shop-card">
         <img class="shop-card-image" src="images/shop-item-desk1.jpg" alt="Подушка">
         <div class="shop-card-description">
