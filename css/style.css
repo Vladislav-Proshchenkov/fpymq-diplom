@@ -80,6 +80,10 @@ body {
   display: none;
 }
 
+.line-menu-item {
+  width: 22px;
+}
+
 .header-logo {
   width: 179px;
   margin-left: 248px;
@@ -125,7 +129,7 @@ body {
   margin-right: 4px;
   background-image: url("../images/trend1.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center bottom;
   background-size: cover;
   position: relative;
   display: flex;
@@ -157,7 +161,7 @@ body {
   margin-right: 4px;
   background-image: url("../images/trend2.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center bottom;
   background-size: cover;
   position: relative;
   display: flex;
@@ -188,9 +192,10 @@ body {
   height: 319px;
   background-image: url("../images/trend3.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center bottom;
   background-size: cover;
   position: relative;
+  display: flex;
   z-index: 1;
 }
 
@@ -220,9 +225,10 @@ body {
   margin-left: 4px;
   background-image: url("../images/trend4.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center bottom;
   background-size: cover;
   position: relative;
+  display: flex;
   z-index: 1;
 }
 
@@ -649,7 +655,7 @@ aside {
 } 
 
 .popup {
-  width: 452px;
+  width: 390px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -665,15 +671,13 @@ aside {
 }
  
 .popup-window {
-  width: 390px;
+  width: 330px;
   min-height: 590px;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 54px;
-  border: 1px solid black;
 }
 
 .popup-header {
@@ -682,6 +686,7 @@ aside {
   font-size: 20px;
   color: #0f0d0e;
   text-transform: uppercase;
+  margin-top: 54px;
   margin-bottom: 14px;
 }
 
@@ -689,8 +694,7 @@ aside {
   font-family: "open-sans-regular", sans-serif;
   font-size: 13px;
   color: black;
-  margin-bottom: 9px;
-  margin-top: 32px;
+  margin-bottom: 7px;
 }
 
 .first-input {
@@ -705,6 +709,7 @@ aside {
   border: none;
   background-color: #f4f7f6;
   padding-left: 18px;
+  margin-bottom: 26px;
   background-image: url("../svg/form-arrows.svg");
   background-repeat: no-repeat;
   background-position: right 13px center;
@@ -724,6 +729,7 @@ aside {
 .radio-button-block {
     display: flex;
     flex-direction: row;
+    margin-bottom: 26px;
   }
 
 .radio {
@@ -768,7 +774,6 @@ aside {
   padding-left: 18px;
   padding-right: 18px;
   padding-top: 17px;
-  padding-bottom: auto;
 }
 
 .second-input:focus {
@@ -795,7 +800,7 @@ aside {
   background-color: #323232;
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) and (orientation: portrait) {
 
   .exit_popup {
     width: 28px;
@@ -939,5 +944,243 @@ aside {
     margin-top: 36px;
     width: 90.89vw;
   }
+
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+
+  .exit_popup {
+    width: 28px;
+    height: 28px;
+    margin-top: 23px;
+}
   
+  .popup {
+    width: 330px;
+  }
+
+  .popup-window {
+    width: 270px;
+    height: 546px;
+  }
+
+  .popup-header {
+    margin-top: 29px;
+  }
+
+  .radio {
+    width: 26px;
+    height: 26px;
+  }
+
+  .radio-button {
+    margin-right: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .container {
+    background-image: url("../images/banner-mobile.jpg");
+    height: 177.78vw;
+
+  }
+
+  .container:after {
+    height: 177.78vw;
+  }
+
+  .panel {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    padding-top: 32px;
+  }
+
+  .header-logo {
+    width: 74.72vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 47.22vw;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  }
+
+  .menu-list {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+  
+  .menu-link {
+    margin-left: 29px;
+/*    display: none;*/
+  }
+
+  .line-menu {
+    width: 22px;
+    height: 19px;
+    margin-right: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .line-menu-item {
+    height: 3px;
+    background-color: white;
+  }
+
+  .title {
+    font-size: 26px;
+    line-height: 36px;
+    margin-top: 43px;
+  }
+
+  .news-block {
+    width: 100vW;
+  }
+
+  .trend-news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 498px;
+  }
+  
+  .trend-card-first {
+    width: 100%;
+    height: 64.17vw;
+    margin: 0;
+    margin-bottom: 2px;
+    justify-content: center;
+  }
+
+  .trend-card-first:after {
+    height: 64.17vw;
+  }
+
+  .trend-card-second {
+    width: 100%;
+    height: 64.17vw;
+    margin: 0;
+    margin-bottom: 2px;
+    justify-content: center;
+  }
+
+  .trend-card-second:after {
+    height: 64.17vw;
+  }
+
+  .trend-card-third {
+    width: 100%;
+    height: 64.17vw;
+    margin: 0;
+    margin-bottom: 2px;
+    justify-content: center;
+  }
+
+  .trend-card-third:after {
+    height: 64.17vw;
+  }
+
+  .trend-card-fourth {
+    width: 100%;
+    height: 64.17vw;
+    margin: 0;
+    justify-content: center;
+  }
+
+  .trend-card-fourth:after {
+    height: 64.17vw;
+  }
+
+  .trend-text {
+    font-size: 16px;
+  }
+
+  .trand-box {
+    width: 71.67vw;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .news-block {
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .news-cards {
+    width: 91.66vw;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .news-card {
+    flex-wrap: wrap;
+  }
+
+  .news-photo {
+    width: 91.66vw;
+    height: 70.56vw;
+  }
+
+  .news-description {
+    width: 91.66vw;
+    margin-left: 0;
+    margin-top: 12px;
+  }
+
+  .data-author-block {
+    margin-top: 16px;
+  }
+
+  .description-block {
+    margin-top: 16px;
+  }
+
+  aside {
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 91.66vw;
+  }
+
+  .list-tags {
+    height: 66px;
+    justify-content: center;
+  }
+
+  .tag-in-list {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .shop-block {
+    width: 90.89vw;
+    margin-left: 15px;
+    margin-right: 15px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .shop-card {
+    width: 100%;
+    margin-bottom: 28px;
+  }
+
+  .shop-card-image {
+    width: 78.89vw;
+    height: 56.67vw;
+  }
+
+  .social-networks {
+    margin-top: 36px;
+    width: 90.89vw;
+  }
+
 }
