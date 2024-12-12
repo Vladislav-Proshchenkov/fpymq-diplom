@@ -1,7 +1,6 @@
 @font-face {
   font-family: "open-sans-bold";
   src: url("../fonts/OpenSans-Bold.ttf");
-  font-style: bold;
 }
 
 @font-face {
@@ -449,12 +448,11 @@ aside {
 }
 
 .button {
-  width: 48;
-  height: 48;
+  width: 48px;
+  height: 48px;
   border: none;
   padding: 0;
   background-color: #b59f5b;
-  border-radius: 0;
 }
 
 .button:hover {
@@ -769,7 +767,6 @@ aside {
   background-repeat: no-repeat;
   background-position: right 13px center;
   background-size: 10px;
-  scrollbar-width: 0;
 }
 
 .first-input:focus {
