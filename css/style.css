@@ -15,8 +15,12 @@ body {
   margin: auto;
 }
 
+._hidden {
+  display: none;
+}
+
 .container {
-  height: 449px;
+  min-height: 449px;
   background-image: url("../images/banner-bg.jpg");
   background-repeat: no-repeat;
   background-position: center top;
@@ -27,7 +31,7 @@ body {
 
 .container:after {
   content: "";
-  height: 449px;
+  min-height: 449px;
   position: absolute;
   top: 0;
   left: 0;
@@ -63,7 +67,7 @@ body {
 .menu-link {
   text-decoration: none;
   color: white;
-  margin-left: 35px;
+  margin-left: 32px;
 }
 
 .menu-link:hover {
@@ -97,13 +101,17 @@ body {
   font-size: 45px;
   color: white;
   margin-top: 100px;
+  padding-bottom: 50px;
+  width: 700px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .block-header {
   font-family: "open-sans-bold", sans-serif;
   font-size: 20px;
-  margin-top: 64px;
-  margin-bottom: 14px;
+  margin-top: 60px;
+  margin-bottom: 10px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -114,7 +122,7 @@ body {
   margin: auto;
   background-color: #e1d9bd;
   border: 1px solid #e1d9bd;
-  margin-bottom: 29px;
+  margin-bottom: 27px;
 }
 
 .trend-news {
@@ -124,7 +132,7 @@ body {
 
 .trend-card-first {
   width: 414px;
-  height: 319px;
+  min-height: 319px;
   margin-left: -4px;
   margin-right: 4px;
   background-image: url("../images/trend1.jpg");
@@ -134,11 +142,12 @@ body {
   position: relative;
   display: flex;
   z-index: 1;
+  align-items: flex-end;
 }
 
 .trend-card-first:after {
   content: "";
-  height: 319px;
+  min-height: 319px;
   width: 100%;
   position: absolute;
   top: 0;
@@ -157,7 +166,7 @@ body {
 
 .trend-card-second {
   width: 414px;
-  height: 319px;
+  min-height: 319px;
   margin-right: 4px;
   background-image: url("../images/trend2.jpg");
   background-repeat: no-repeat;
@@ -166,11 +175,12 @@ body {
   position: relative;
   display: flex;
   z-index: 1;
+  align-items: flex-end;
 }
 
 .trend-card-second:after {
   content: "";
-  height: 319px;
+  min-height: 319px;
   width: 100%;
   position: absolute;
   top: 0;
@@ -189,7 +199,7 @@ body {
 
 .trend-card-third {
   width: 414px;
-  height: 319px;
+  min-height: 319px;
   background-image: url("../images/trend3.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -197,11 +207,12 @@ body {
   position: relative;
   display: flex;
   z-index: 1;
+  align-items: flex-end;
 }
 
 .trend-card-third:after {
   content: "";
-  height: 319px;
+  min-height: 319px;
   width: 100%;
   position: absolute;
   top: 0;
@@ -220,7 +231,7 @@ body {
 
 .trend-card-fourth {
   width: 414px;
-  height: 319px;
+  min-height: 319px;
   margin-right: -4px;
   margin-left: 4px;
   background-image: url("../images/trend4.jpg");
@@ -230,11 +241,12 @@ body {
   position: relative;
   display: flex;
   z-index: 1;
+  align-items: flex-end;
 }
 
 .trend-card-fourth:after {
   content: "";
-  height: 319px;
+  min-height: 319px;
   width: 100%;
   position: absolute;
   top: 0;
@@ -252,17 +264,18 @@ body {
 }
 
 .trand-box {
-  position: absolute;
-  justify-content: space-between;
+  position: relative;
   border: 3px solid rgba(225, 217, 189, 0.6);
   bottom: 0;
+  margin-top: 16px;
   margin-left: 18px;
-  margin-right: 22px;
+  margin-right: 20px;
   margin-bottom: 16px;
-  padding-top: 34px;
-  padding-bottom: 37px;
+  padding-top: 32px;
+  padding-bottom: 34px;
   padding-left: 33px;
   padding-right: 33px;
+  flex-grow: 1;
 }
 
 .tag-block{
@@ -275,7 +288,7 @@ body {
   font-size: 14px;
   text-transform: uppercase;
   color: #b59f5b;
-  margin-right: 10px;
+  margin-right: 12px;
 }
 
 .tag:hover {
@@ -285,9 +298,15 @@ body {
 .trend-text {
   font-family: "open-sans-bold", sans-serif;
   font-size: 20px;
-  margin-top: 16px;
+  margin-top: 5px;
   text-transform: uppercase;
   color: white;
+  display: flex;
+  text-decoration: none;
+}
+
+.trend-text:hover {
+  color: #b59f5b;
 }
 
 .news-block {
@@ -303,7 +322,7 @@ body {
 
 .news-card {
   display: flex;
-  margin-top: 59px;
+  margin-top: 49px;
 }
 
 .news-photo {
@@ -314,16 +333,21 @@ body {
 .news-description {
   width: 378px;
   margin-left: 31px;
-  padding-top: 2px;
+  padding-top: 1px;
 }
 
 .title-block {
-  margin-top: 6px;
+  text-decoration: none;
+  margin-top: 4px;
   font-family: "open-sans-bold", sans-serif;
   font-size: 20px;
   text-transform: uppercase;
   line-height: 24px;
   color: #0f0d0e;
+}
+
+.title-block:hover {
+  color: #b59f5b;
 }
 
 .data-author-block {
@@ -335,6 +359,7 @@ body {
 .data {
   font-family: "open-sans-regular", sans-serif;
   color: #888888;
+  font-size: 12px;
 }
 
 .author {
@@ -344,7 +369,7 @@ body {
 }
 
 .description-block {
-  margin-top: 45px;
+  margin-top: 42px;
   font-family: "open-sans-regular", sans-serif;
   color: #0f0d0e;
   font-size: 15px;
@@ -364,9 +389,10 @@ aside {
 }
 
 .posts {
-  margin-top: 62px;
+  margin-top: 45px;
   text-align: center;
   font-family: "open-sans-bold", sans-serif;
+  font-size: 14px;
   color: #0f0d0e;
   text-transform: uppercase;
   margin-bottom: 14px;
@@ -374,7 +400,7 @@ aside {
 
 .link-card {
   display: flex;
-  margin-top: 22px;
+  margin-top: 21px;
 }
 
 .link-image {
@@ -388,13 +414,12 @@ aside {
   color: black;
   text-transform: uppercase;
   font-size: 14px;
-  margin-bottom: 14px;
   line-height: 18px;
   margin-top: 5px;
 }
 
 .search {
-  margin-top: 60px;
+  margin-top: 58px;
   display: flex;
   justify-content: space-between
 }
@@ -534,20 +559,50 @@ aside {
 }
 
 .shop-card-image {
-  width: 300px;
-  height: 204px;
   margin: auto;
   margin-top: 0;
   margin-bottom: 0;
+  display: flex;
+  z-index: -1;
+}
+
+.first_image {
+  width: 300px;
+  height: 204px;
+  background-image: url("../images/shop-item-desk1.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  position: relative;
+}
+
+.second_image {
+  width: 300px;
+  height: 204px;
+  background-image: url("../images/shop-item-desk2.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  position: relative;
+}
+
+.third_image {
+  width: 300px;
+  height: 204px;
+  background-image: url("../images/shop-item-desk3.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  position: relative;
 }
 
 .shop-card-description {
-  height: 196px;
+  min-height: 196px;
   border: 3px solid #b59f5b;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 55px;
-  padding-bottom: 26px;
+  padding-top: 50px;
+  padding-bottom: 22px;
   margin-top: -32px;
 }
 
@@ -821,11 +876,26 @@ aside {
 
   .container {
     background-image: url("../images/banner-bg-tablet.jpg");
+    min-height: 392px;
+  }
+
+  .container:after {
+    min-height: 392px;
+  }
+
+  .panel {
+    padding-top: 28px;
   }
 
   .header-logo {
     width: 158px;
     margin-left: 35px;
+  }
+
+  .title {
+    margin-top: 70px;
+    width: 640px;
+    line-height: 55px;
   }
 
   .menu {
@@ -860,6 +930,15 @@ aside {
     font-size: 40px;
   }
   
+  .block-header {
+    margin-top: 42px;
+    font-size: 18px;
+  }
+
+  .line {
+    margin-bottom: 18px;
+  }
+
   .news-block {
     width: 100vW;
   }
@@ -873,24 +952,49 @@ aside {
   
   .trend-card-first {
     width: 49.9%;
+    min-height: 247px;
     margin: 0;
     margin-bottom: 2px;
+  }
+
+  .trend-card-first:after {
+    min-height: 247px;
   }
 
   .trend-card-second {
     width: 49.9%;
+    min-height: 247px;
     margin: 0;
     margin-bottom: 2px;
   }
 
+  .trend-card-second:after {
+    min-height: 247px;
+  }
+
   .trend-card-third {
     width: 49.9%;
+    min-height: 247px;
     margin: 0;
+  }
+
+  .trend-card-third:after {
+    min-height: 247px;
   }
 
   .trend-card-fourth {
     width: 49.9%;
+    min-height: 247px;
     margin: 0;
+  }
+
+  .trend-card-fourth:after {
+    min-height: 247px;
+  }
+
+  .trend-text {
+    font-size: 17px;
+    line-height: 22px;
   }
 
   .news-block {
@@ -901,6 +1005,20 @@ aside {
     width: 51%;
     margin-left: 35px;
     margin-right: 35px;
+  }
+
+  .title-block {
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  .data-author-block {
+    margin-top: 28px;
+  }
+
+  .description-block {
+    margin-top: 32px;
+    margin-bottom: 10px;
   }
 
   .news-card {
@@ -923,6 +1041,14 @@ aside {
     min-width: 271px;
   }
 
+  .search {
+    margin-bottom: 55px;
+  }
+
+  .email_button {
+    margin-bottom: 10px;
+  }
+
   .shop-block {
     width: 90.89vw;
     margin-left: 35px;
@@ -936,9 +1062,26 @@ aside {
     margin-bottom: 28px;
   }
 
-  .shop-card-image {
+  .shop-card-description {
+    min-height: 200px;
+  }
+
+  .first_image {
     width: 37.89vw;
     height: 29.43vw;
+    background-image: url("../images/shop-item-tablet1.jpg");
+  }
+
+  .second_image {
+    width: 37.89vw;
+    height: 29.43vw;
+    background-image: url("../images/shop-item-tablet2.jpg");
+  }
+
+  .third_image {
+    width: 37.89vw;
+    height: 29.43vw;
+    background-image: url("../images/shop-item-tablet3.jpg");
   }
 
   .social-networks {
@@ -1018,7 +1161,7 @@ aside {
   
   .menu-link {
     margin-left: 29px;
-/*    display: none;*/
+    display: none;
   }
 
   .line-menu {
@@ -1039,6 +1182,12 @@ aside {
     font-size: 26px;
     line-height: 36px;
     margin-top: 43px;
+    width: 350px;
+  }
+
+  .block-header {
+    font-size: 16px;
+    margin-top: 40px;
   }
 
   .news-block {
@@ -1054,49 +1203,49 @@ aside {
   
   .trend-card-first {
     width: 100%;
-    height: 64.17vw;
+    min-height: 228px;
     margin: 0;
     margin-bottom: 2px;
     justify-content: center;
   }
 
   .trend-card-first:after {
-    height: 64.17vw;
+    min-height: 228px;
   }
 
   .trend-card-second {
     width: 100%;
-    height: 64.17vw;
+    min-height: 228px;
     margin: 0;
     margin-bottom: 2px;
     justify-content: center;
   }
 
   .trend-card-second:after {
-    height: 64.17vw;
+    min-height: 228px;
   }
 
   .trend-card-third {
     width: 100%;
-    height: 64.17vw;
+    min-height: 228px;
     margin: 0;
     margin-bottom: 2px;
     justify-content: center;
   }
 
   .trend-card-third:after {
-    height: 64.17vw;
+    min-height: 228px;
   }
 
   .trend-card-fourth {
     width: 100%;
-    height: 64.17vw;
+    min-height: 228px;
     margin: 0;
     justify-content: center;
   }
 
   .trend-card-fourth:after {
-    height: 64.17vw;
+    min-height: 228px;
   }
 
   .trend-text {
@@ -1107,6 +1256,7 @@ aside {
     width: 71.67vw;
     margin-left: 15px;
     margin-right: 15px;
+    padding: 24px;
   }
 
   .news-block {
@@ -1136,6 +1286,10 @@ aside {
     margin-top: 12px;
   }
 
+  .title-block {
+    font-size: 16px;
+  }
+
   .data-author-block {
     margin-top: 16px;
   }
@@ -1148,6 +1302,14 @@ aside {
     margin-right: 15px;
     margin-left: 15px;
     width: 91.66vw;
+  }
+
+  .posts {
+    font-size: 16px;
+  }
+
+  .search {
+    margin-top: 60px;
   }
 
   .list-tags {
@@ -1172,17 +1334,39 @@ aside {
 
   .shop-card {
     width: 100%;
+    min-height: 283px;
     margin-bottom: 28px;
   }
 
-  .shop-card-image {
+  .first_image {
     width: 78.89vw;
-    height: 56.67vw;
+    height: 78.89vw;
+    background-image: url("../images/shop-item-mobile1.jpg");
+  }
+
+  .second_image {
+    width: 78.89vw;
+    height: 78.89vw;
+    background-image: url("../images/shop-item-mobile2.jpg");
+  }
+
+  .third_image {
+    width: 78.89vw;
+    height: 78.89vw;
+    background-image: url("../images/shop-item-mobile3.jpg");
+  }
+
+  .shop-card-description {
+    min-height: 50px;
   }
 
   .social-networks {
-    margin-top: 36px;
+    margin-top: 30px;
     width: 90.89vw;
+  }
+
+  .license{
+    margin-top: 45px;
   }
 
 }
